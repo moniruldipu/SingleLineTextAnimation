@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Multiple Texts Typing Animation | Engr Dipu </title>
+  <title>Single Texts Typing Animation | Engr Dipu </title>
   <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -23,63 +23,25 @@ body{
   /* display: flex; */
 }
 .wrapper .static-txt{
-  color: #fff;
+  color: rgb(208, 99, 99);
   font-size: 50px;
   font-weight: 400;
 }
-.wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.dynamic-txts li{
-  list-style: none;
-  color: #FC6D6D;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100%{
-    top: -360px;
-  }
-}
-.dynamic-txts li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-.dynamic-txts li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #343F4F;
-  border-left: 2px solid #FC6D6D;
-  animation: typing 3s steps(10) infinite;
-}
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
-}
+
+
+
 
 
 /* ============================== */
-.typewriter h1 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 400;
+.typewriter li {
+  color: #FC6D6D;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: wrap; /* Keeps the content on a single line */
+  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
@@ -106,7 +68,7 @@ body{
   <div class="wrapper">
     <div class="static-txt">Hi, I'm <b>Md. Ahasan Habib</b>,</div>
     <div class="typewriter">
-      <h1>BLANKS PLUS's Country Manager (Apparel Industry in Bangladesh).</h1>
+      <li>BLANKS PLUS's Country Manager (Apparel Industry in Bangladesh).</li>
     </div>
   </div>
   <!-- ====================== -->
